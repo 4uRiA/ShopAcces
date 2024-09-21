@@ -1,0 +1,9 @@
+﻿@page
+@model ShopAcces.Pages.CatalogModel
+@{
+    <h3>Заголовок</h3>
+    foreach(var acces in Model.accessores)
+    {
+        <p>@acces.Name --> @acces.Description --> @acces.Price</p>
+    }
+}
